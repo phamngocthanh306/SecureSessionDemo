@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        a { text-decoration: none; color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng, {{ user }}!</h1>
+    <p>Bạn đang ở trong khu vực an toàn.</p>
+    <p>Session ID của bạn đang được bảo vệ bởi:</p>
+    <ul style="display: inline-block; text-align: left;">
+        <li>HttpOnly Cookie (Chống XSS)</li>
+        <li>Session Timeout (5 phút)</li>
+        <li>User-Agent & IP Binding (Chống Hijacking)</li>
+    </ul>
+    <br><br>
+    <a href="/logout">Đăng xuất</a>
+</body>
+</html>
